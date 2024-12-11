@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center Note Taker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Call Center Note Taker</h1>
+        <div class="input-group">
+            <label for="cmf"><strong>CMF:</strong></label>
+            <input type="text" id="cmf" placeholder="Enter CMF">
+        </div>
+        <div class="input-group">
+            <label for="salesforceCase"><strong>Salesforce Case #:</strong></label>
+            <input type="text" id="salesforceCase" placeholder="Enter Salesforce Case #">
+        </div>
+        <div class="input-group">
+            <label for="contactName"><strong>Contact Name:</strong></label>
+            <input type="text" id="contactName" placeholder="Enter Contact Name">
+        </div>
+        <div class="input-group">
+            <label for="contactPhone"><strong>Contact Phone #:</strong></label>
+            <input type="text" id="contactPhone" placeholder="Enter Contact Phone #">
+        </div>
+        <div class="input-group">
+            <label for="deviceAddress"><strong>Device Address:</strong></label>
+            <input type="text" id="deviceAddress" placeholder="Enter Device Address">
+        </div>
+        <div class="input-group">
+            <label for="deviceLocation"><strong>Device Location:</strong></label>
+            <input type="text" id="deviceLocation" placeholder="Enter Device Location">
+        </div>
+        <div class="input-group">
+            <label for="problem"><strong>Problem:</strong></label>
+            <textarea id="problem" rows="4" placeholder="Describe the problem"></textarea>
+        </div>
+        <div class="input-group">
+            <label for="troubleshooting"><strong>Troubleshooting & Diagnosis:</strong></label>
+            <textarea id="troubleshooting" rows="4" placeholder="Describe the troubleshooting & diagnosis"></textarea>
+        </div>
+        <div class="button-group">
+            <button id="copyButton">Copy Notes</button>
+            <button id="clearButton">Clear Notes</button>
+        </div>
+        <div class="output">
+            <h2>Copied Notes:</h2>
+            <div id="copiedNotes"></div>
+        </div>
+        <div id="copyNotification" class="notification">Notes copied to clipboard!</div>
+        <div id="clearNotification" class="notification">Notes cleared!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
