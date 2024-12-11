@@ -1,5 +1,6 @@
 document.getElementById('copyButton').addEventListener('click', function() {
     const cmf = document.getElementById('cmf').value;
+    const salesforceCase = document.getElementById('accountName').value;
     const salesforceCase = document.getElementById('salesforceCase').value;
     const contactName = document.getElementById('contactName').value;
     const contactPhone = document.getElementById('contactPhone').value;
@@ -10,6 +11,7 @@ document.getElementById('copyButton').addEventListener('click', function() {
 
     const copiedNotes = `
         <p><strong>CMF:</strong> ${cmf}</p>
+         <p><strong>Account Name:</strong> ${accountName}</p>
         <p><strong>Salesforce Case #:</strong> ${salesforceCase}</p>
         <p><strong>Contact Name:</strong> ${contactName}</p>
         <p><strong>Contact Phone #:</strong> ${contactPhone}</p>
@@ -57,6 +59,7 @@ document.addEventListener('paste', function(event) {
 
 document.getElementById('clearButton').addEventListener('click', function() {
     document.getElementById('cmf').value = '';
+    document.getElementById('accountName').value = '';
     document.getElementById('salesforceCase').value = '';
     document.getElementById('contactName').value = '';
     document.getElementById('contactPhone').value = '';
