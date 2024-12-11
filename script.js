@@ -4,7 +4,6 @@ document.getElementById('copyButton').addEventListener('click', function() {
     const salesforceCase = document.getElementById('salesforceCase').value;
     const contactName = document.getElementById('contactName').value;
     const contactPhone = document.getElementById('contactPhone').value;
-    const deviceLocation = document.getElementById('deviceLocation').value;
     const problem = document.getElementById('problem').value;
     const troubleshooting = document.getElementById('troubleshooting').value;
 
@@ -14,7 +13,6 @@ document.getElementById('copyButton').addEventListener('click', function() {
         <p><strong>Salesforce Case #:</strong> ${salesforceCase}</p>
         <p><strong>Contact Name:</strong> ${contactName}</p>
         <p><strong>Contact Phone #:</strong> ${contactPhone}</p>
-        <p><strong>Device Location:</strong> ${deviceLocation}</p>
         <p><strong>Problem:</strong> ${problem}</p>
         <p><strong>Troubleshooting & Diagnosis:</strong><br><pre><code>${troubleshooting}</code></pre></p>
     `;
@@ -61,7 +59,6 @@ document.getElementById('clearButton').addEventListener('click', function() {
     document.getElementById('salesforceCase').value = '';
     document.getElementById('contactName').value = '';
     document.getElementById('contactPhone').value = '';
-    document.getElementById('deviceLocation').value = '';
     document.getElementById('problem').value = '';
     document.getElementById('troubleshooting').value = '';
     document.getElementById('copiedNotes').innerHTML = '';
